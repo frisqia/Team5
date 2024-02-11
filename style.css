@@ -1,0 +1,169 @@
+:root {
+  --pink: pink;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+header .logo span {
+  color: var(--pink);
+}
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: #666;
+}
+header .navbar a:hover {
+  color: var(--pink);
+}
+
+header .icons a {
+  font-size: 3rem;
+  color: #333;
+  margin-left: 2rem;
+}
+
+header .icons a:hover {
+  color: var(--pink);
+}
+
+header #menu {
+  display: none;
+}
+
+header .bx-menu {
+  font-size: 3rem;
+  color: #333;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.3rem solid rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+article {
+  font-size: medium;
+  margin-top: 15rem;
+  margin-left: 20px;
+  display: flex;
+}
+
+footer {
+  font-size: 2rem;
+  background: var(--pink);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .fa {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+.fa-facebook {
+  background: white;
+  color: var(--pink);
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: white;
+  color: var(--pink);
+  border-radius: 50%;
+}
+
+.fa-google {
+  background: white;
+  color: var(--pink);
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: white;
+  color: var(--pink);
+  border-radius: 50%;
+}
+
+.fa-youtube {
+  background: white;
+  color: var(--pink);
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: white;
+  color: var(--pink);
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html .bx-menu {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 50%;
+    background: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
